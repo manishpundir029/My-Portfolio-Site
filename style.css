@@ -1,0 +1,180 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f39c12;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Home */
+.home {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.home h1 span {
+  color: #f39c12;
+}
+
+.home p {
+  color: #fff;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.btn {
+  background: #f39c12;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #d35400;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Skills */
+.skills .skill-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill {
+  background: #eee;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Projects */
+.projects .project-card {
+  background: #fafafa;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 500px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact button {
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
